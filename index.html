@@ -5,11 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
 
 <body>
+    <div class="row">
+        <div class="col-12 bg-dark text-light text-center p-6">
+            <div class="timer">
+                <h2>
+                    Time
+                </h2>
+                <span id="current-time">
+                    0
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="start-screen">
+        <h1>Code Quiz</h1>
+        <p>
+            Click the start button to begin the Quiz. You will be given 60 seconds to complete this quiz. answering a question answered incorrectly will deduct 10 seconds from your time. Good luck!
+        </p>
+        <button id="start-button">
+            <h3>
+                Start
+            </h3>
+        </button>
+    </div>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-btns" class="btn-grid"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div id="final-screen" class="hide">
+                <div class="score-board">
+                    <h1>
+                        Score
+                    </h1>
+                    <span id="score"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div id="initials" class="hide">
+                <form id="initial-form">
+                    <label for="intial-text">Initials:</label>
+                    <input type="text" placeholder="Type initials Here" id="initial-text">
+                </form>
+                <p>Score-board: <span id="test-score">0</span></p>
+                <ul id="initial-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div id="restart" class="hide">
+                <button id="restart-btn">
+                    <h3>Retry Quiz</h3>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
