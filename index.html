@@ -22,11 +22,11 @@
             </span>
         </div>
     </header>
-
+    <div class="container">
     <div class="title" id="start-screen">
         <h1>Code Quiz</h1>
         <p>
-            Click the start button to begin the Quiz. You will be given 60 seconds to complete this quiz. answering a question answered incorrectly will deduct 10 seconds from your time. Good luck!
+            Click the start button to begin the Quiz. You will be given 60 seconds to complete this quiz. answering a question incorrectly will deduct 10 seconds from your time. Good luck!
         </p>
         <button id="start-button">
             <h3>
@@ -35,16 +35,14 @@
         </button>
     </div>
 
-    <div class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-btns" class="btn-grid"></div>
+        
+        <div id="question-container" style="display: none;">
+           <div id="question">Question</div>
+           <div id="answer-btns" class="btn-grid">
+           </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <div id="final-screen" class="hide">
+        
+            <div id="final-screen" style="display: none;">
                 <div class="score-board">
                     <h1>
                         Score
@@ -52,29 +50,23 @@
                     <span id="score"></span>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div id="initials" class="hide">
+   
+            <div id="initials" style="display: none;">
                 <form id="initial-form">
                     <label for="intial-text">Initials:</label>
                     <input type="text" placeholder="Type initials Here" id="initial-text">
                 </form>
-                <p>Score-board: <span id="test-score">0</span></p>
+                <p>Score-board: <span id="initial-count">0</span></p>
                 <ul id="initial-list"></ul>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div id="restart" class="hide">
+        
+    
+            <div id="restart" style="display: none;">
                 <button id="restart-btn">
                     <h3>Retry Quiz</h3>
                 </button>
             </div>
-        </div>
-    </div>
+            </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
